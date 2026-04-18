@@ -2,17 +2,17 @@ export default function Footer() {
     const currentYear = new Date().getFullYear();
 
     const services = [
-        { name: 'Landing Page', href: '#services' },
-        { name: 'Company Profile', href: '#services' },
-        { name: 'Portofolio Website', href: '#services' },
-        { name: 'Custom Website', href: '#service' },
-        { name: 'Daftar Harga', href: '#pricing' },
+        { name: 'Landing Page', href: '/services' },
+        { name: 'Company Profile', href: '/services' },
+        { name: 'Portofolio Website', href: '/services' },
+        { name: 'Custom Website', href: '/service' },
+        { name: 'Daftar Harga', href: '/services' },
     ];
 
     const company = [
-        { name: 'Tentang', href: '#about' },
-        { name: 'Layanan', href: '#services' },
-        { name: 'Kontak', href: '#contact' },
+        { name: 'Tentang', href: '/about-us' },
+        { name: 'Layanan', href: '/services' },
+        { name: 'Kontak', href: '/contact' },
     ];
 
     return (
@@ -52,9 +52,9 @@ export default function Footer() {
                         </ul>
                     </div>
 
-                    {/* Perusahaan */}
+                    {/* Informasi */}
                     <div>
-                        <h4 className="text-white font-semibold mb-4 text-base">Perusahaan</h4>
+                        <h4 className="text-white font-semibold mb-4 text-base">Informasi</h4>
                         <ul className="space-y-3">
                             {company.map((item) => (
                                 <li key={item.name}>
@@ -141,7 +141,7 @@ export default function Footer() {
                             &copy; {currentYear} Averant Team. All rights reserved.
                         </p>
                         <p className="text-gray-500 text-sm flex items-center gap-1">
-                            &copy; Lorelei-Project
+                            Built by Lorelei-Project
                         </p>
                     </div>
                 </div>

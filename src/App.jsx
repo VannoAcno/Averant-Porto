@@ -7,7 +7,7 @@ export default function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/tentang" element={<About />} />
+        <Route path="/about-us" element={<About />} />
       </Routes>
     </BrowserRouter>
   )
