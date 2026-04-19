@@ -37,7 +37,7 @@ export default function Navbar() {
                 <div className="flex justify-between items-center h-16">
 
                     {/* Logo */}
-                    <a href="#home" className="flex items-center space-x-2 group">
+                    <a href="/" className="flex items-center space-x-2 group">
                         <img
                             src="/logo.webp"
                             alt="Logo"
