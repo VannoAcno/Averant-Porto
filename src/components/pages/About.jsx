@@ -4,9 +4,15 @@ import BackToTop from "../features/BackToTop";
 import stock1 from "../../assets/stock2.jpg";
 import ButtonParallaxAbout from "../layouts/ButtonParallaxAbout";
 
+import SEO from "../SEO/SEO";
+
 export default function About3() {
   return (
     <>
+      <SEO
+        title="Tentang Kami | Averant Team - Jasa Pembuatan Website Surabaya"
+        description="Averant Team adalah penyedia jasa pembuatan website profesional di Surabaya. Kami membantu bisnis & UMKM go digital dengan solusi web modern, cepat, dan harga terjangkau."
+      />
       <Navbar />
       <div className="bg-white select-none">
         {/* Hero Section */}

@@ -1,9 +1,10 @@
 import { Helmet } from 'react-helmet-async'
 
 export default function SEO({
-    title = 'Averant Team',
-    description = 'Jasa pembuatan website profesional & harga terjangkau di Surabaya',
-    url = typeof window !== 'undefined' ? window.location.href : 'https://averantteam.com',
+    title = 'Averant Team - Jasa Pembuatan Website Surabaya',
+    description = 'Jasa pembuatan website profesional di Surabaya. Harga terjangkau, hasil berkualitas. Konsultasi gratis!',
+    image = '/logo.png',
+    url = 'https://averantteam.com',
     noindex = false
 }) {
     const schema = {
@@ -11,15 +12,16 @@ export default function SEO({
         "@type": "ProfessionalService",
         "name": "Averant Team",
         "description": description,
-        "url": typeof window !== 'undefined' ? window.location.origin : 'https://averantteam.com',
-        "sameAs": ["https://www.instagram.com/averanteam.official/"],
-        "address": {
-            "@type": "PostalAddress",
-            "addressLocality": "Surabaya",
-            "addressRegion": "Jawa Timur",
-            "addressCountry": "ID"
+        "image": image,
+        "priceRange": "$$",
+        "areaServed": {
+            "@type": "City",
+            "name": "Surabaya"
         },
-        "priceRange": "$$"
+        "serviceType": "Jasa Pembuatan Website",
+        "sameAs": [
+            "https://www.instagram.com/averanteam.official/"
+        ]
     }
 
     return (
@@ -27,9 +29,17 @@ export default function SEO({
             <title>{title}</title>
             <meta name="description" content={description} />
             <meta name="robots" content={noindex ? "noindex, nofollow" : "index, follow"} />
-            <link rel="canonical" href={url} />
-
-            {/* JSON-LD Schema */}
+            
+            <meta property="og:type" content="website" />
+            <meta property="og:title" content={title} />
+            <meta property="og:description" content={description} />
+            <meta property="og:image" content={image} />
+            <meta property="og:site_name" content="Averant Team" />
+            
+            {url && url !== 'https://averantteam.com' && (
+                <link rel="canonical" href={url} />
+            )}
+            
             <script type="application/ld+json">
                 {JSON.stringify(schema)}
             </script>

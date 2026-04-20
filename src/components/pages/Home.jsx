@@ -7,16 +7,20 @@ import ButtonParallax from "../layouts/ButtonParallax";
 
 import BackToTop from "../features/BackToTop";
 
-document.title = "Home - Averant Team";
+import SEO from "../SEO/SEO";
+
 export default function Home() {
   return (
     <>
+      <SEO 
+        title="Home | Averant Team - Jasa Pembuatan Website Surabaya"
+        description="Averant Team - Jasa pembuatan website profesional di Surabaya. Company profile, toko online, landing page, & portfolio. Harga mulai 500rb. Konsultasi gratis!"
+        url="https://averantteam.com/"
+      />
       <Navbar />
       <Hero />
       <ButtonParallax />
       <Service />
-
-
       <FAQ />
       <Footer />
       <BackToTop />

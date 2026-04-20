@@ -94,7 +94,7 @@ export default function Services() {
   return (
     <>
     <Navbar />
-    <div className="min-h-screen bg-gradient-to-b from-slate-50 to-white py-16 mt-10">
+    <div className="min-h-screen bg-linear-to-b from-slate-50 to-white py-16 mt-10">
       <div className="container mx-auto px-4">
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
@@ -157,7 +157,7 @@ export default function Services() {
                   <ul className="space-y-2">
                     {service.features.map((feature, index) => (
                       <li key={index} className="flex items-center text-sm text-slate-600">
-                        <Check className="w-4 h-4 text-green-500 mr-2 flex-shrink-0" />
+                        <Check className="w-4 h-4 text-green-500 mr-2 shrink-0" />
                         {feature}
                       </li>
                     ))}
@@ -269,7 +269,7 @@ export default function Services() {
                   className="bg-white rounded-2xl p-6 border-2 border-slate-100 hover:shadow-lg transition-shadow"
                 >
                   <div className="flex items-start gap-4">
-                    <div className={`w-12 h-12 rounded-xl flex items-center justify-center flex-shrink-0 ${colorClasses[rec.color]}`}>
+                    <div className={`w-12 h-12 rounded-xl flex items-center justify-center shrink-0 ${colorClasses[rec.color]}`}>
                       <Icon className="w-6 h-6" />
                     </div>
                     <div className="flex-1">
@@ -298,7 +298,7 @@ export default function Services() {
         </div>
 
         {/* CTA Section */}
-        <div className="mt-20 text-center max-w-3xl mx-auto bg-gradient-to-r from-purple-600 to-blue-600 rounded-3xl p-8 md:p-12 text-white">
+        <div className="mt-20 text-center max-w-3xl mx-auto bg-linear-to-r from-purple-600 to-blue-600 rounded-3xl p-8 md:p-12 text-white">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
             Masih Ragu Memilih Layanan?
           </h2>
