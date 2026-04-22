@@ -1,3 +1,4 @@
+//About
 import { 
   Sparkles, 
   Search, 
@@ -16,7 +17,7 @@ export default function About3() {
   return (
     <>
       <SEO
-        title="Tentang Kami | Averant Team - Jasa Pembuatan Website Surabaya"
+        title="Jasa Pembuatan Website Surabaya | Averant Team"
         description="Averant Team adalah penyedia jasa pembuatan website profesional di Surabaya. Kami membantu bisnis & UMKM go digital dengan solusi web modern, cepat, dan harga terjangkau."
       />
       <Navbar />
