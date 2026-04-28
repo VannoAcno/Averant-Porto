@@ -5,6 +5,7 @@ import {
     Palette,
     Bot,
 } from "lucide-react";
+import { Link } from 'react-router-dom';
 
 export default function Service() {
     return (
@@ -145,8 +146,8 @@ export default function Service() {
                 </div>
 
                 <div className="mt-5 flex flex-col items-center gap-4">
-                    <a
-                        href="/Services"
+                    <Link
+                        href="/services"
                         className="group relative inline-flex items-center gap-2 px-8 py-3.5 bg-linear-to-r from-purple-600 to-purple-700 text-white font-semibold text-sm rounded-full shadow-md shadow-purple-200 hover:from-purple-700 hover:to-purple-800 hover:shadow-lg hover:shadow-purple-300 hover:-translate-y-0.5 active:translate-y-0 transition-all duration-300"
                     >
                         <span>Lihat Selengkapnya</span>
@@ -159,7 +160,7 @@ export default function Service() {
                         >
                             <path strokeLinecap="round" strokeLinejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" />
                         </svg>
-                    </a>
+                    </Link>
                     <span className="text-xs text-gray-400">
                         5 layanan utama &middot; 50+ add-on &middot; Custom request
                     </span>

@@ -1,8 +1,10 @@
 import stock1 from "../../assets/stock2.jpg";
+import { Link } from 'react-router-dom';
+
 export default function ButtonParallaxAbout() {
     return (
         <>
-            <a href="/contact" className="select-none block w-full pb-5">
+            <Link href="/contact" className="select-none block w-full pb-5">
                 <section className="w-full flex items-center justify-center -mt-8 relative z-10 px-4">
                     <div className="w-full max-w-7xl h-40 md:h-48 relative group cursor-pointer rounded-xl shadow-2xl overflow-hidden">
                         <div className="absolute inset-0 overflow-hidden">
@@ -40,7 +42,7 @@ export default function ButtonParallaxAbout() {
                         </div>
                     </div>
                 </section>
-            </a>
+            </Link>
         </>
     );
 }

@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 export default function Footer() {
     const currentYear = new Date().getFullYear();
 
@@ -41,12 +43,12 @@ export default function Footer() {
                         <ul className="space-y-3">
                             {services.map((item) => (
                                 <li key={item.name}>
-                                    <a
+                                    <Link
                                         href={item.href}
                                         className="text-gray-400 hover:text-white text-sm transition-colors duration-200 inline-block hover:translate-x-1 transform"
                                     >
                                         {item.name}
-                                    </a>
+                                    </Link>
                                 </li>
                             ))}
                         </ul>
@@ -58,12 +60,12 @@ export default function Footer() {
                         <ul className="space-y-3">
                             {company.map((item) => (
                                 <li key={item.name}>
-                                    <a
+                                    <Link
                                         href={item.href}
                                         className="text-gray-400 hover:text-white text-sm transition-colors duration-200 inline-block hover:translate-x-1 transform"
                                     >
                                         {item.name}
-                                    </a>
+                                    </Link>
                                 </li>
                             ))}
                         </ul>

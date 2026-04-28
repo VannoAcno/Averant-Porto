@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { useNavigate, useLocation } from 'react-router-dom';
+import { useNavigate, useLocation, Link } from 'react-router-dom';
 
 export default function Navbar() {
     const [isOpen, setIsOpen] = useState(false);
@@ -72,7 +72,7 @@ export default function Navbar() {
                 <div className="flex justify-between items-center h-16">
 
                     {/* Logo */}
-                    <a href="/" className="flex items-center space-x-2 group">
+                    <Link href="/" className="flex items-center space-x-2 group">
                         <img
                             src="/logo.webp"
                             alt="Logo"
@@ -84,12 +84,12 @@ export default function Navbar() {
                             }`}>
                             Averant Team
                         </span>
-                    </a>
+                    </Link>
 
                     {/* Desktop Links */}
                     <div className="hidden md:flex items-center space-x-8">
                         {navLinks.map((link) => (
-                            <a
+                            <Link
                                 key={link.name}
                                 href={link.href}
                                 onClick={(e) => handleLinkClick(e, link.href)}
@@ -99,7 +99,7 @@ export default function Navbar() {
                                     }`}
                             >
                                 {link.name}
-                            </a>
+                            </Link>
                         ))}
                     </div>
 
@@ -120,7 +120,7 @@ export default function Navbar() {
                 <div className={`px-4 pt-2 pb-4 backdrop-blur-md border-t space-y-1 ${isDarkNavbar ? 'bg-black/95 border-gray-800' : 'bg-white/95 border-gray-100'
                     }`}>
                     {navLinks.map((link) => (
-                        <a
+                        <Link
                             key={link.name}
                             href={link.href}
                             onClick={(e) => handleLinkClick(e, link.href)}
@@ -130,7 +130,7 @@ export default function Navbar() {
                                 }`}
                         >
                             {link.name}
-                        </a>
+                        </Link>
                     ))}
                 </div>
             </div>

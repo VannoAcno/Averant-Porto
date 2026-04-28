@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 export default function Hero() {
     return (
         <section id="landing" className="select-none pt-28 pb-20 bg-linear-to-br from-[#5B23FF] to-[#362F4F] text-white">
@@ -9,7 +11,7 @@ export default function Hero() {
                     Melayani pembuatan Company Profile, Landing Page, dan Website Portofolio dengan desain modern dan fungsional.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                    <a
+                    <Link
                         href="/contact"
                         className="justify-center group relative px-8 py-3 bg-white text-[#5B23FF] rounded-lg font-semibold hover:bg-gray-100 transition-all duration-300 hover:shadow-lg hover:-translate-y-0.5 inline-flex items-center gap-2 overflow-hidden"
                     >
@@ -17,13 +19,13 @@ export default function Hero() {
                         <svg className="relative z-10 w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
                         </svg>
-                    </a>
-                    <a
-                        href="#services"
+                    </Link>
+                    <Link
+                        href="/services"
                         className="px-8 py-3 border-2 border-white/30 text-white rounded-lg font-semibold hover:bg-white/10 hover:border-white/50 transition-all duration-300"
                     >
                         Lihat Layanan
-                    </a>
+                    </Link>
                 </div>
             </div>
         </section>
