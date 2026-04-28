@@ -7,7 +7,7 @@ export default function Footer() {
         { name: 'Landing Page', href: '/services' },
         { name: 'Company Profile', href: '/services' },
         { name: 'Portofolio Website', href: '/services' },
-        { name: 'Custom Website', href: '/service' },
+        { name: 'Custom Website', href: '/services' },
         { name: 'Daftar Harga', href: '/services' },
     ];
 
